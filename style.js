@@ -13,38 +13,32 @@
 		ckEditorStyles: {
 			name: 'companeros2021_demo',
 			styles: [
-				{ name: 'Título base', element: 'h2', attributes: { 'class': 'titulobase'} },
-				{ name: 'Título 1', element: 'h2', attributes: { 'class': 'bck-title1'} },
+				{ name: 'Título 1', element: 'h2', attributes: { 'class': 'bck-title1' } },
+				{ name: 'Título 2', element: 'h2', attributes: { 'class': 'titulobase' } },
+				{ name: 'Título 3', element: 'h3', attributes: { 'class': 'evaluacionsumativa' } },
 
+				{ name: 'Énfasis 1', element: 'span', attributes: { 'class': 'bck-enfasis' } },
+				{ name: 'Énfasis 2', element: 'span', attributes: { 'class': 'bck-enfasis-naranja' } },
 
-				{ name: 'Énfasis', element: 'span', attributes: { 'class': 'bck-enfasis'} },
-				{ name: 'Énfasis Naranja', element: 'span', attributes: { 'class': 'bck-enfasis-naranja'} },
-				{ name: 'Versalitas', element: 'span', attributes: { 'class': 'bck-versalitas'} },
-
-				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul'} },
-				{ name: 'Lista Desordenada 1', element: 'ul', attributes: { 'class': 'bck-ul-1'} },
-				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
 				{ name: 'Lista Ordenada 1', element: 'ol', attributes: { 'class': 'bck-ol-1' } },
 				{ name: 'Lista Ordenada 2', element: 'ol', attributes: { 'class': 'bck-ol-2' } },
 				{ name: 'Lista Ordenada 3', element: 'ol', attributes: { 'class': 'bck-ol-3' } },
 				{ name: 'Lista Ordenada 4', element: 'ol', attributes: { 'class': 'bck-ol-4' } },
 				{ name: 'Lista Ordenada 5', element: 'ol', attributes: { 'class': 'bck-ol-5' } },
 
+				{ name: 'Lista Desordenada 1', element: 'ul', attributes: { 'class': 'bck-ul-1'} },
+				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
+
 				{ name: 'Caja 1', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box-1' } },
 				{ name: 'Caja 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box-2' } },
 				{ name: 'Caja 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box-3' } },
 				{ name: 'Caja 4', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box-4' } },
+				{ name: 'Caja 5', type: 'widget', widget: 'blink_box', attributes: { 'class': 'autoevaluacion' } },
+				{ name: 'Caja 6', type: 'widget', widget: 'blink_box', attributes: { 'class': 'coevaluacion' } },
+				{ name: 'Caja 7', type: 'widget', widget: 'blink_box', attributes: { 'class': 'heteroevaluacion' } },
+				{ name: 'Caja 8', type: 'widget', widget: 'blink_box', attributes: { 'class': 'laboratorio2' } },
 
-				{ name: 'Tabla', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table'} },
-				{ name: 'Celda1', element: 'td', attributes: { 'class': 'bck-td'} },
-				{ name: 'Celda2', element: 'td', attributes: { 'class': 'bck-td-dos'} },
-
-				{ name: 'Desplegable 1', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'bck-dropdown-1' } },
-
-
-				{ name: 'Imagen Sin Bordes', type: 'widget', widget: 'image', attributes: { 'class': 'normal-img' } },
-				{ name: 'Imagen derecha', element: 'img', attributes: { 'class': 'bck-img right' } },
-				{ name: 'Imagen izquierda', element: 'img', attributes: { 'class': 'bck-img left' } },
+				{ name: 'Desplegable 1', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'bck-dropdown-1' } }
 
 				
 			]
