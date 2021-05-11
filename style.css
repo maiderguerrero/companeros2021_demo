@@ -118,17 +118,7 @@ body {
 }
 
 .body_clase:not(.edit) .logo-publisher {
-    display: inline-block;
-    content: " ";
-    background-image: url(images/logo_companeros2021_demo_educacion.png);
-    width: 150px;
-    height: 114px;
-    margin-top: -22px;
-    float: right;
-    text-align: right;
-    background-size: 130px;
-    background-repeat: no-repeat;
-    margin-right: 0px;
+    display: none;
 }
 
 .html-book {
