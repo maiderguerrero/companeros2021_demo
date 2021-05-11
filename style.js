@@ -1,27 +1,18 @@
 (function (blink) {
 	'use strict';
 
-	var companeros2021_demoStyle = function () {
-		blink.theme.styles.vitamina.apply(this, arguments);
+	var vitaminaStyle = function () {
+		blink.theme.styles.maya_educacion.apply(this, arguments);
 	},
 	page = blink.currentPage;
 
-	companeros2021_demoStyle.prototype = {
-		parent: blink.theme.styles.vitamina.prototype,
-		bodyClassName: 'content_type_clase_companeros2021_demo',
+	vitaminaStyle.prototype = {
+		parent: blink.theme.styles.maya_educacion.prototype,
+		bodyClassName: 'content_type_clase_vitamina',
 		ckEditorStyles: {
-			name: 'companeros2021_demo',
+			name: 'vitamina',
 			styles: [
-				{ name: 'Título 1', element: 'h2', attributes: { 'class': 'bck-title1' } },
-				{ name: 'Título 2', element: 'h2', attributes: { 'class': 'titulobase' } },
-				{ name: 'Título 3', element: 'h3', attributes: { 'class': 'evaluacionsumativa' } },
-
-				{ name: 'Énfasis 1', element: 'span', attributes: { 'class': 'bck-enfasis' } },
-				{ name: 'Énfasis 2', element: 'span', attributes: { 'class': 'bck-enfasis-naranja' } },
-
 				{ name: 'Lista Ordenada 1', element: 'ol', attributes: { 'class': 'bck-ol-1' } },
-				{ name: 'Lista Ordenada 2', element: 'ol', attributes: { 'class': 'bck-ol-2' } },
-				{ name: 'Lista Ordenada 3', element: 'ol', attributes: { 'class': 'bck-ol-3' } },
 				{ name: 'Lista Ordenada 4', element: 'ol', attributes: { 'class': 'bck-ol-4' } },
 				{ name: 'Lista Ordenada 5', element: 'ol', attributes: { 'class': 'bck-ol-5' } },
 
@@ -32,10 +23,6 @@
 				{ name: 'Caja 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box-2' } },
 				{ name: 'Caja 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box-3' } },
 				{ name: 'Caja 4', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box-4' } },
-				{ name: 'Caja 5', type: 'widget', widget: 'blink_box', attributes: { 'class': 'autoevaluacion' } },
-				{ name: 'Caja 6', type: 'widget', widget: 'blink_box', attributes: { 'class': 'coevaluacion' } },
-				{ name: 'Caja 7', type: 'widget', widget: 'blink_box', attributes: { 'class': 'heteroevaluacion' } },
-				{ name: 'Caja 8', type: 'widget', widget: 'blink_box', attributes: { 'class': 'laboratorio2' } },
 
 				{ name: 'Desplegable 1', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'bck-dropdown-1' } }
 			],
@@ -48,7 +35,7 @@
 		},
 		slidesTitle: {},
 		subunits: [],
-		classNavBar: "companeros2021_demo-navbar",
+		classNavBar: "vitamina-navbar",
 
 		init: function () {
 			this.parent.init.call(this.parent, this);
@@ -67,7 +54,7 @@
 		}
 	};
 
-	companeros2021_demoStyle.prototype = _.extend({}, new blink.theme.styles.vitamina(), companeros2021_demoStyle.prototype);
-	blink.theme.styles['companeros2021_demo'] = companeros2021_demoStyle;
+	vitaminaStyle.prototype = _.extend({}, new blink.theme.styles.maya_educacion(), vitaminaStyle.prototype);
+	blink.theme.styles['vitamina'] = vitaminaStyle;
 
 })( blink );
