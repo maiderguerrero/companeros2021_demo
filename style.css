@@ -493,7 +493,7 @@ body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover,
 
 /* NAVBAR (Breadcums) */
 
-.body_clase .vitamina-navbar {
+.body_clase .companeros2021_demo-navbar {
     position: fixed;
     top: 44px;
     width: 100%;
@@ -504,7 +504,7 @@ body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover,
     height: auto;
 }
 
-.body_clase .vitamina-navbar .navbar-content h2 {
+.body_clase .companeros2021_demo-navbar .navbar-content h2 {
     color: #fff;
     font-weight: 400;
     font-size: 2rem;
@@ -517,7 +517,7 @@ body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover,
     display: table-cell;
 }
 
-.body_clase .vitamina-navbar .dropdown button {
+.body_clase .companeros2021_demo-navbar .dropdown button {
     font-weight: 400;
     width: auto;
     padding: 0;
@@ -2465,7 +2465,7 @@ table td.bck-td-dos {
 
 /*------------------------------Navbar - Coursetag azul-----------------------------*/
 
-.coursetag_sgel2021_compa_azul.body_clase .vitamina-navbar {
+.coursetag_sgel2021_compa_azul.body_clase .companeros2021_demo-navbar {
     background-color: #4489c9;
 }
 
@@ -2518,7 +2518,7 @@ table td.bck-td-dos {
 
 /*------------------------------Navbar - Coursetag verde-----------------------------*/
 
-.coursetag_sgel2021_compa_verde.body_clase .vitamina-navbar {
+.coursetag_sgel2021_compa_verde.body_clase .companeros2021_demo-navbar {
     background-color: #78992b;
 }
 
@@ -2570,7 +2570,7 @@ table td.bck-td-dos {
 
 /*------------------------------Navbar - Coursetag amarillo-----------------------------*/
 
-.coursetag_sgel2021_compa_amarillo.body_clase .vitamina-navbar {
+.coursetag_sgel2021_compa_amarillo.body_clase .companeros2021_demo-navbar {
     background-color: #d9aa00;
 }
 
@@ -2622,7 +2622,7 @@ table td.bck-td-dos {
 
 /*------------------------------Navbar - Coursetag rojo internacional-----------------------------*/
 
-.coursetag_sgel2021_compainternacional_rojo.body_clase .vitamina-navbar {
+.coursetag_sgel2021_compainternacional_rojo.body_clase .companeros2021_demo-navbar {
     background-color: #db0b34;
 }
 
@@ -2674,7 +2674,7 @@ table td.bck-td-dos {
 
 /*------------------------------Navbar - Coursetag azul internacional-----------------------------*/
 
-.coursetag_sgel2021_compainternacional_azul.body_clase .vitamina-navbar {
+.coursetag_sgel2021_compainternacional_azul.body_clase .companeros2021_demo-navbar {
     background-color: #00a4c2;
 }
 
@@ -2726,7 +2726,7 @@ table td.bck-td-dos {
 
 /*------------------------------Navbar - Coursetag amarillo internacional-----------------------------*/
 
-.coursetag_sgel2021_compainternacional_amarillo.body_clase .vitamina-navbar {
+.coursetag_sgel2021_compainternacional_amarillo.body_clase .companeros2021_demo-navbar {
     background-color: #ffcd00;
 }
 
@@ -2779,7 +2779,7 @@ table td.bck-td-dos {
 
 /*------------------------------Navbar - Coursetag verde internacional-----------------------------*/
 
-.coursetag_sgel2021_compainternacional_verde.body_clase .vitamina-navbar {
+.coursetag_sgel2021_compainternacional_verde.body_clase .companeros2021_demo-navbar {
     background-color: #009b67;
 }
 
