@@ -1,47 +1,493 @@
+/*General */
+@font-face {
+    font-family: 'Conv_CheltenhamStd-Bold';
+    src: url('fonts/CheltenhamStd-Bold.eot');
+    src: local('☺'), url('fonts/CheltenhamStd-Bold.woff') 
+    format('woff'), url('fonts/CheltenhamStd-Bold.ttf') 
+    format('truetype'), url('fonts/CheltenhamStd-Bold.svg') 
+    format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-/*ESTILO SGEL 2021 COMPAÑEROS*/
+@font-face {
+    font-family: 'Conv_CheltenhamStd-Book';
+    src: url('fonts/CheltenhamStd-Book.eot');
+    src: local('☺'), url('fonts/CheltenhamStd-Book.woff') 
+    format('woff'), url('fonts/CheltenhamStd-Book.ttf') 
+    format('truetype'), url('fonts/CheltenhamStd-Book.svg') 
+    format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_CheltenhamStd-Light';
+    src: url('fonts/CheltenhamStd-Light.eot');
+    src: local('☺'), url('fonts/CheltenhamStd-Light.woff') 
+    format('woff'), url('fonts/CheltenhamStd-Light.ttf') 
+    format('truetype'), url('fonts/CheltenhamStd-Light.svg') 
+    format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_FuturaStd-Bold';
+    src: url('fonts/FuturaStd-Bold.eot');
+    src: local('☺'), url('fonts/FuturaStd-Bold.woff') 
+    format('woff'), url('fonts/FuturaStd-Bold.ttf') 
+    format('truetype'), url('fonts/FuturaStd-Bold.svg') 
+    format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_FuturaStd-Book';
+    src: url('fonts/FuturaStd-Book.eot');
+    src: local('☺'), url('fonts/FuturaStd-Book.woff') 
+    format('woff'), url('fonts/FuturaStd-Book.ttf') 
+    format('truetype'), url('fonts/FuturaStd-Book.svg') 
+    format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_FuturaStd-Light';
+    src: url('fonts/FuturaStd-Light.eot');
+    src: local('☺'), url('fonts/FuturaStd-Light.woff') 
+    format('woff'), url('fonts/FuturaStd-Light.ttf') 
+    format('truetype'), url('fonts/FuturaStd-Light.svg') 
+    format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_HelveticaLTStd-Blk';
+    src: url('fonts/HelveticaLTStd-Blk.eot');
+    src: local('☺'), url('fonts/HelveticaLTStd-Blk.woff') 
+    format('woff'), url('fonts/HelveticaLTStd-Blk.ttf') 
+    format('truetype'), url('fonts/HelveticaLTStd-Blk.svg') 
+    format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_HelveticaLTStd-Roman';
+    src: url('fonts/HelveticaLTStd-Roman.eot');
+    src: local('☺'), url('fonts/HelveticaLTStd-Roman.woff') 
+    format('woff'), url('fonts/HelveticaLTStd-Roman.ttf') 
+    format('truetype'), url('fonts/HelveticaLTStd-Roman.svg') 
+    format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_HelveticaLTStd-Light';
+    src: url('fonts/HelveticaLTStd-Light.eot');
+    src: local('☺'), url('fonts/HelveticaLTStd-Light.woff') 
+    format('woff'), url('fonts/HelveticaLTStd-Light.ttf') 
+    format('truetype'), url('fonts/HelveticaLTStd-Light.svg') 
+    format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
-/*------------------------------------------TOC-----------------------------------------*/
 
-#indice .units ul li.active:not(.disabled), 
-#indice .units ul li:focus:not(.disabled) {
-    background: #e9511d;
+body {
+    background: #b6ecff1f;
+    font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
+
+}
+
+.body_clase .content-wrapper {
+    padding-top: 85px;
+    padding-bottom: 0px;
+}
+
+.body_clase.edit .content-wrapper {
+    padding-top: 0;
+    top: 0px;
+}
+
+.body_clase:not(.edit) .logo-publisher {
+    display: inline-block;
+    content: " ";
+    background-image: url(images/logo_companeros2021_demo_educacion.png);
+    width: 150px;
+    height: 114px;
+    margin-top: -22px;
+    float: right;
+    text-align: right;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+}
+
+.html-book {
+    font-size: 1.9rem;
+}
+
+.libro .footer .powered,
+.libro .footer .legal-notes,
+.libro .footer .about-us,
+.libro .footer .contact-us,
+.libro .footer .faq {
+    display: none;
+}
+
+.body_clase #actividad {
+    margin-bottom: 0px;
+    -webkit-transform: none;
+    -webkit-transform-style: flat;
+}
+
+.body_clase .slide-wrapper {
+    text-align: justify;
+}
+
+#actividad .carousel-inner .item-container {
+    background-image: none;
+    max-width: 1200px;
+    box-shadow: rgba(0,0,0,0.298039) 0 0px 0px;
+    margin: 20px auto 30px;
+    padding: 0px;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+#swipeview-slider > div {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+a:hover, a:active, a:focus {
+    color: #898989;
+}
+
+.zoom_flag_img {
+    top: 20px;
+}
+/*HEADER*/
+
+.body_clase #actividad .content .header .title img,
+.body_clase #actividad .content .header .chapter {
+    display: none;
+}
+
+.body_clase #actividad .content .header {
     border: none;
 }
 
-#indice .units ul li a .title {
-    margin: -21px 0 0 35px;
-    font-size: 15px;
-    font-weight: 400;
-    margin: -21px 0 0 35px;
-    line-height: 18px;
-    display: block;
-    color: #666;
+.body_clase #actividad .content .header .title h3 {
+    display: none;
 }
 
-body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title, 
-body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
+input, button, select, textarea {
+    padding-left: 0;
+    padding-bottom: 0px;
 }
 
-#indice .units ul li.hover:not(.disabled), 
-body:not(.isTablet) #indice .units ul li:hover:not(.disabled), 
+.companeros2021_demo-navbar h3 {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+/**/
+
+.texto_curso p:last-of-type {
+    margin-bottom: 0px;
+}
+
+.body_clase #actividad .texto_curso {
+    font-size: 1.8rem;
+    font-family: 'Conv_CheltenhamStd-Book', serif;
+}
+
+.body_clase #actividad .texto_curso li,
+.body_clase #actividad .workspace ul li li {
+    margin-bottom: 10px;
+}
+
+.body_clase #actividad .texto_curso li:last-of-type,
+.body_clase #actividad .workspace ul li li:last-of-type {
+    margin-bottom: 0px;
+}
+
+.texto_curso ul li:before,
+.workspace ul li ul li:before,
+.cke_contents ul li:before, .preview ul li:before,
+.classify-item ul li:before,
+#actividad .workspace.multiple-choice .js-item ul li:before,
+#actividad .workspace.matching .box ul li:before,
+#actividad .workspace.ordenar .js-rank-item ul li:before {
+    background-color: #AC218F;
+    border-radius: 0%;
+    border: 0px;
+}
+
+#actividad .class_slide {
+    padding: 5px 75px 0px 75px;
+}
+
+#actividad .class_slide:last-of-type {
+    padding-bottom: 100px;
+}
+
+#actividad .slide-concatenate .class_slide {
+    padding-bottom: 20px;
+}
+
+#actividad .slide-concatenate:last-of-type .class_slide {
+    padding-bottom: 100px;
+}
+
+#actividad .content .header .title {
+    min-height: 0px;
+}
+
+.body_clase .slide_main input {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.body_clase .slide_main input:focus,
+.body_clase .slide_main .form-control:focus {
+    border-color: #9664AB;
+    outline-width: 0px;
+    outline-style: none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(133, 200, 57, 0.6);
+}
+
+.body_clase .slide_main input[disabled],
+.body_clase .slide_main input[readonly],
+fieldset[disabled] .body_clase .slide_main input {
+    cursor: not-allowed;
+    background-color: #eee;
+    opacity: 1;
+}
+
+.body_clase .slide_main input.respuesta_ok {
+    border-color: #57e900;
+    background: #D1F3BD;
+}
+
+.body_clase .slide_main input.respuesta_ko {
+    border-color: #FF3626;
+    background: #FFA49D;
+}
+
+.body_clase .slide_main input.solucion {
+    border-color: #00BDFF;
+    background: #B6ECFF;
+}
+/**/
+
+/*CSS LIBRO*/
+
+
+
+ 
+
+
+
+/* CURSO */ /*INDICE LATERAL*/
+
+.libro-left #btn-book-index,
+#indice .unit-content {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+}
+
+
+
+#indice .unit-content .header {
+    border: 0px solid #9665AB;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+}
+
+#book-index #indice .unit-content .actividades .item .title {
+    font-weight: 400;
+}
+
+#indice .units ul li {
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
+}
+
+#indice .units ul li.hover:not(.disabled),
+body:not(.isTablet) #indice .units ul li:hover:not(.disabled),
 #indice .units ul li:hover:not(.disabled) {
-    background: #f9b4a8;
-    border: none;
+    background: #EC968C;
 }
 
 
-#indice .actividades a:hover {
-    color: #e9511d;
+
+
+
+#indice .units ul li.active:not(.disabled),
+#indice .units ul li:focus:not(.disabled) {
+    background: #E76048;
 }
 
 
-/*-----------------------------------------NAVBAR---------------------------------------*/
+
+#book-index #indice .unit-content a,
+#indice .units ul li a,
+#indice .actividades a {
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
+    color: #414141;
+    background: transparent;
+}
+
+#book-index #indice .unit-content a:hover,
+#indice .units ul li a:hover,
+#indice .actividades a:hover,
+#book-index #indice .unit-content a:active,
+#indice .units ul li a:active,
+#indice .actividades a:active,
+#book-index #indice .unit-content a:focus,
+#indice .units ul li a:focus,
+#indice .actividades a:focus {
+    color: #E7604D;,
+}
+
+#book-index #indice .unit-content .actividades .item {
+    background: #e0cccc;
+    margin: 0px -20px 2px -20px;
+    padding-left: 25px;
+    opacity: 1;
+}
+
+body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover,
+#book-index #indice .unit-content .actividades .item.active,
+#book-index #indice .unit-content .actividades .item.current {
+    color: #fff;
+    background: #EC968C;
+}
+
+body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover a,
+#book-index #indice .unit-content .actividades .item.active a,
+#book-index #indice .unit-content .actividades .item.current a {
+    color: #fff;
+}
+
+body:not(.isTablet) #book-index #indice .unit-content .actividades .item:active,
+#book-index #indice .unit-content .actividades .item.active,
+#book-index #indice .unit-content .actividades .item.current {
+    background: #EC968C;
+}
+
+#indice .unit-content .actividades .item.nivel_6 .title,
+#indice .unit-content .actividades .item.nivel_6 .text {
+    padding-left: 0;
+    font-size: 1.8rem;
+}
+
+.zoom_flag_img {
+    top: 20px;
+}
+
+#book-index #indice .unit-content .content .title-buttons .btn {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+}
+
+/*INDICE LATERAL ROJO*/
+
+
+
+#book-index .col-main {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #be1f24 !important;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover, #book-index #indice .units ul li.active a {
+    color: #fff;
+    background: #be1f24;
+}
+
+#book-index #indice .units ul li a .title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#book-index #indice .unit-content .actividades .item .title {
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+#book-index .col-indice {
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    background: #dc715f;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.libro-left ul li a.book-index.active {
+    background-color: #BE1F24;
+}
+
+
+
+
+
+/**/
+
+/* NAVBAR (Breadcums) */
+#top-navigator {
+    height: 55px;
+    overflow: hidden;
+    position: relative;
+}
+
+#top-navigator.show_left:before {
+    background: linear-gradient(to right, #7aac39, transparent);
+}
+
+#top-navigator.show_right:after {
+    background: linear-gradient(to left, #7aac39, transparent);
+}
 
 .body_clase .companeros2021_demo-navbar {
     position: fixed;
@@ -49,15 +495,118 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled),
     width: 100%;
     left: 0;
     z-index: 100;
-    background-color: #e9511d;
+    background-color: #be1f24;
     padding-top: 0px;
-    height: auto;
+    height: 41px;
+}
+
+.body_clase .modo-revision ~ .companeros2021_demo-navbar .navbar-content h2 #nombre-tema-wrapper {
+    margin-left: -20px;
+}
+
+.body_clase .modo-revision ~ .companeros2021_demo-navbar {
+    top: 90px;
+}
+
+.body_clase .modo-revision ~ .companeros2021_demo-navbar .dropdown {
+    margin: -30px 0px 0px 40px;
+}
+
+.body_clase .modo-revision ~ .companeros2021_demo-navbar .dropdownTemas {
+    top: 14px;
+    width: 46%;
+    height: 72px;
+}
+
+.body_clase .modo-revision #actividad .class_slide .revision-budget {
+    padding-top: 13px;
+}
+
+body.is_app .companeros2021_demo-navbar {
+    display: none;
+}
+
+body.is_app .companeros2021_demo-navbar.ocultar {
+    top: -136px;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdown button,
+.body_clase .companeros2021_demo-navbar li {
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    vertical-align: middle;
+    margin: 0px 5px;
+    text-indent: 0px;
+    line-height: 2.5rem;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+.body_clase .companeros2021_demo-navbar li {
+    font-size: 1.5rem;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdown button {
+    font-weight: 600;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    border: none;
+    color: #fff;
+    vertical-align: bottom;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdown button:focus {
+    outline: none;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdown .caret {
+    border-color: #fff transparent transparent transparent;
+    margin-left: 10px;
+}
+
+.body_clase .companeros2021_demo-navbar .navbar-content {
+    max-width: 1160px;
+    margin: auto;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdownTemas {
+    position: relative;
+    display: inline-block;
+    border-right: 5px solid #fff;
+    padding-right: 40px;
+    margin-left: 50px;
+    width: 45%;
+    padding-top: 10px;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdownTemas:focus,
+.body_clase .companeros2021_demo-navbar .dropdownTemas button:focus {
+    outline: none;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdownTemas button {
+    background-color: transparent;
+    border: none;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdownTemas .caret{
+    border-color: #fff transparent transparent transparent;
+    margin-left: 10px;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdownTemas .dropdown-menu {
+    left: 0px;
+    margin-top: -9px;
 }
 
 .body_clase .companeros2021_demo-navbar .navbar-content h2 {
     color: #fff;
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 2.2rem;
     margin-bottom: 0;
     padding-top: 0px;
     padding-left: 60px;
@@ -67,1248 +616,1553 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled),
     display: table-cell;
 }
 
-.body_clase .companeros2021_demo-navbar .dropdown button {
-    font-weight: 400;
-    width: auto;
-    padding: 0;
-    margin: 0;
+.body_clase .companeros2021_demo-navbar .navbar-content h2 #nombre-tema-wrapper {
+    line-height: 2.5rem;
+    margin-left: -50px;
+}
+
+
+
+.body_clase .slider-indicators {
+    padding: 10px 0px;
+    display: inline-block;
     text-align: left;
-    border: none;
-    color: #fff;
-    vertical-align: bottom;
-    font-size: 2rem;
-}
-
-
-/*--------------------------------------MENÚ LATERAL------------------------------------*/
-
-#book-index .col-main {
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background: #e9511d !important;
-    -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-}
-
-.libro-left ul li a.book-index.active {
-    background-color: #e9511d;
-}
-
-body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover, 
-#book-index #indice .units ul li.active a {
-    color: #fff;
-    background: #e9511d;
-}
-
-#book-index #indice .units ul li a .title {
-    margin: 0;
-    font-size: 1.6rem;
-    font-weight: 400;
-}
-
-#book-index #indice .unit-content .actividades .item .title {
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
-#book-index .col-indice {
-    padding: 0;
     position: absolute;
-    z-index: 1;
-    background: #efeeee;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    width: 5000px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
 }
 
-#book-index #indice .unit-content .actividades .item:hover, 
-#book-index #indice .unit-content .actividades .item.active, 
-#book-index #indice .unit-content .actividades .item.current {
-    color: #fff;
-    background: #f18c6a !important;
+.body_clase .slider-indicators li:first-child span,
+.body_clase .dropdown li:first-child span.num {
+    font-family: "Palatino Linotype", Times;
 }
 
-/*----------------------------------------GENERAL----------------------------------------*/
-
-body {
-    color: #220000;
+.body_clase .first-is-section .slider-indicators li:first-child span,
+.body_clase .first-is-section .dropdown li:first-child span.num {
+    font-family: 'FontAwesome' !important;
 }
 
-.body_clase #actividad .texto_curso {
-    font-size: 1.8rem;
-    font-family: sans-serif;
+.dropdown-menu li span:first-child {
+    display: inline-block;
+    min-width: 20px;
+    float: left;
 }
 
-.html-book {
-    font-size: 1.8rem;
+.body_clase .slider-indicators li {
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px;
+    text-align: center;
 }
 
-/*--------------------------------------ACTIVIDADES------------------------------------------*/
-
-#actividad .workspace.test .respuestas li:before {
-    display: none;
+.body_clase .slider-indicators li.active,
+.body_clase .companeros2021_demo-navbar li:hover {
+    background-color: #FFEDB3;
 }
 
-#actividad .workspace label {
-    font-weight: normal;
-    font-family: sans-serif;
-    font-size: 1.6rem;
+.body_clase .companeros2021_demo-navbar .dropdown {
+    width: 33%;
+    display: inline-block;
+    float: right;
+    margin: 0px;
+    padding-top: 10px;
 }
 
-/*---------------------------------------------Títulos---------------------------------------*/
-
-/*Título slide*/
-
-/*
-.body_clase #actividad .content .header .title {
-     display: block;
-     min-height: 0px;
-    background: #e30613;
-    padding: 0;
-    height: 5px;
-    margin-top: 15px;
-   
-}
-
-.body_clase #actividad .content .header .title h3 {
+.open > .dropdown-menu {
     display: block;
-    background: red;
-    color: #fff;
-    -moz-width: fit-content;
-    -webkit-width: fit-content;
-    -ms-width: fit-content;
-    -o-width: fit-content;
-    width: fit-content;
-    padding: 5px 10px 0px 9px;
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin-top: -15px;
-    margin-right: 19px;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-*/
 
-/*Título 1*/
+.dropdown-menu > li > a {
+    padding: 3px 20px 0px 20px;
+}
+
+.dropdownTemas .dropdown-menu > li > a {
+    display: inline;
+    padding-left: 5px;
+}
+
+.dropdownTemas .dropdown-menu > li > a:hover {
+    background-color: transparent;
+}
+
+.dropdownTemas .dropdown-menu > li > span {
+    padding-left: 10px;
+}
+
+.dropdown-menu .title {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdown li {
+    display: list-item;
+    width: auto;
+}
+
+.body_clase .companeros2021_demo-navbar .dropdown li a {
+    color: #777;
+    font-size: 1.5rem;
+    overflow: auto;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #FFEDB3;
+}
+
+/**/
+
+/* Navigators */
+.navigator {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    padding: 0px 97px;
+}
+
+.navigator .title {
+    width: calc(100% - 20px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    line-height: 4.0rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-navigator {
+    padding: 15px 0px;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+}
+
+.navigator .left, .navigator .right {
+    width: 49%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navigator .left {
+    padding-left: 20px;
+}
+
+.navigator .right {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.navigator .slider-control.left,
+.navigator .slider-control.right {
+    position: static;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 0px;
+    opacity: 1;
+    text-shadow: none;
+    color: #999;
+    font-size: 2.3rem;
+}
+
+.navigator .slider-control.left:before,
+.navigator .slider-control.right:after {
+    font-family: 'FontAwesome';
+    position: absolute;
+    margin-top: 9px;
+    font-family: 'FontAwesome';
+    position: absolute;
+    margin-top: 10px;
+    background: transparent;
+    color: #999;
+    border-radius: 0px;
+    width: 48px;
+    height: 48px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.navigator .slider-control.left:before {
+    margin-left: -20px;
+    content: "\f104";
+}
+
+.navigator .slider-control.right:after {
+    margin-left: 20px;
+    content: "\f105";
+}
+
+.navigator .slider-control span {
+    position: static;
+    margin: 0px;
+    cursor: pointer;
+}
+/**/
+
+/* CKEDITOR */
+#actividad .content img {
+    margin-top: 10px;
+    border-bottom-right-radius: 0;
+}
+
+/*Evitar bordes en las lineas del matching*/
+#actividad .workspace.matching .img-relaciones img {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+
+#actividad .content .normal-img,  #actividad .content figure.normal-img img {
+    border: none;
+    border-radius: 0;
+}
+
+#actividad .content figure.normal-img {
+    margin: 0;
+    padding: 0;
+}
+
+#actividad .content .bck-img-align-right {
+    float: right;
+}
+
+#actividad .content .bck-img-align-center {
+    text-align: center;
+}
+
+#actividad .player.audio {
+    background-image: url(images/vitamina_audio.png);
+    background-size: 100%;
+    background-position: 0;
+    background-color: transparent;
+}
 
 .bck-title1 {
-    text-align: center;
-    color: #fff;
-    font-size: 2.1rem;
-    font-weight: bold;
+    text-align: left;
+    color: #414141;
+    font-size: 4.5rem;
+    font-weight: 400;
     position: relative;
     border-left: 0px;
-    padding: 10px 15px;
+    padding: 0px;
     margin-bottom: 30px;
-    font-family: Sans-serif;
-    width: 100%;
-    background-color: #E62E22;
-    display: block;
+    font-family: 'Conv_FuturaStd-Light', sans-serif;
 }
 
-/*
-.bck-title1:after{
-    content: "";
-    padding: 2px;
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    background-color: #e62e22;
-    margin-top: 10px;
-    margin-left: 30px;
-}
-*/
 
 
-/*Título 2 - Título base*/
-
-.titulobase {
-    font-family: sans-serif;
-    color: #878786;
+strong {
+    color: #444;
     font-weight: bold;
-    font-size: 4rem;
-    margin-bottom: 30px;
 }
-
-/*Título 3 - Evaluacion sumativa*/
-
-.evaluacionsumativa {
-    font-weight: bold;
-    color: #E62E22;
-    font-size: 2.6rem;
-    width: 100%;
-    border: 3px dotted #E62E22;
-    padding: 15px 10px;
-}
-
-/*---------------------------------------ENFASIS----------------------------------------------------*/
-
-/*Enfasis*/
 
 .bck-enfasis {
-    color: #006FB9;
+    color: #00BDF2;
     font-weight: bold;
-    font-style: italic;
 }
-
-/*Enfasis naranja*/
 
 .bck-enfasis-naranja {
-    color: #E23734;
-    font-weight: bold;
-    font-size: 2.3rem;
-    display: inline-block;
-    margin-bottom: 15px;
+    color: #ED7102;
 }
 
-/*--------------------------------------LISTAS ORDENADAS---------------------------------------------*/
 
-/*Lista ordenada 1*/
 
-#actividad .content .cke_contents .bck-ol-1 li, 
-#actividad .content .texto_curso .bck-ol-1 li, 
-#actividad .popover-content .bck-ol-1 li, 
+/*listas*/
+
+/*LISTAS DESORDENADAS*/
+
+.content ol li, .cke_contents ol li {
+    padding-left: 32px;
+}
+
+#actividad .content .cke_contents .bck-ol-1 li,
+
+#actividad .content .cke_contents ul.bck-ul-1 li,
+#actividad .content ul.bck-ul-1 li {
+    list-style: none;
+}
+
+
+
+#actividad .content .texto_curso ul li:before,
+#actividad .content .workspace ul li ul li:before,
+#actividad .content .cke_contents .bck-ul-1 li:before,
+#actividad .content .texto_curso .bck-ul-1 li:before,
+#actividad .content .workspace ul li .bck-ul-1 li:before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: #1D1D1B;
+    margin-top: 10px;
+    margin-left: -15px;
+    margin-right: 7px;
+    margin-bottom: 2px;
+    border-radius: 100%;
+}
+
+
+#actividad .content .texto_curso  ul.bck-ul-2 li,
+#actividad .content .workspace ul li ul.bck-ul-2 li {
+    list-style: none;
+}
+
+
+
+
+#actividad .content .cke_contents .bck-ul-2 li:before,
+#actividad .content .texto_curso .bck-ul-2 li:before,
+#actividad .content .workspace ul li .bck-ul-2 li:before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: #A6A6AA;
+    margin-top: 10px;
+    margin-left: -15px;
+    margin-right: 7px;
+    margin-bottom: 2px;
+    border-radius: 100%;
+    
+}
+
+
+/**/
+
+/*LISTAS ORDENADAS*/
+
+
+
+#actividad .content .texto_curso .bck-ol li,
+#actividad .popover-content .bck-ol li,
+#actividad .content .workspace ul li .bck-ol li {
+    list-style-type: none;
+    counter-increment: bck-li-counter 1;
+    position: relative;
+}
+
+#actividad .content .texto_curso .bck-ol li:before,
+#actividad .popover-content .bck-ol li:before,
+#actividad .content .workspace ul li .bck-ol li:before {
+    content: counter(bck-li-counter);
+    position: absolute;
+    width: 20px;
+    text-align: right;
+    color: #9ACB1E;
+    font-size: 1.9rem;
+    font-family: sans-serif;
+    font-weight: normal;
+    position: absolute;
+    left: -30px ;
+}
+
+/*LISTA ORDENADA 1*/
+
+#actividad .content .cke_contents .bck-ol-1,
+#actividad .content .texto_curso .bck-ol-1,
+#actividad .content .workspace ul li .bck-ol-1 {
+    list-style-type: none;
+    counter-reset: bck-li-counter;
+    padding-inline-start: 20px;
+
+}
+
+#actividad .content .cke_contents .bck-ol-1 li,
+#actividad .content .texto_curso .bck-ol-1 li,
+#actividad .popover-content .bck-ol-1 li,
 #actividad .content .workspace ul li .bck-ol-1 li {
     counter-increment: bck-li-counter;
-    padding-left: 0px;
-    position: relative;
-    z-index: 0;
-    color: #414141;
-    font-size: 1.8rem;
-    font-weight: bold;
-    font-family: sans-serif;
-    text-align: left;
+  padding-left: 25px;
+  position: relative;
+  z-index: 0;
+  color: #414141;
+  font-size: 7rem;
+  font-weight: 100;
+  font-family: 'Conv_FuturaStd-Light', sans-serif;
 }
 
-#actividad .content .cke_contents .bck-ol-1 li:before, 
-#actividad .content .texto_curso .bck-ol-1 li:before, 
-#actividad .popover-content .bck-ol-1 li:before, 
+#actividad .content .cke_contents .bck-ol-1 li:before,
+#actividad .content .texto_curso .bck-ol-1 li:before,
+#actividad .popover-content .bck-ol-1 li:before,
 #actividad .content .workspace ul li .bck-ol-1 li:before {
-    content: counter(bck-li-counter);
-    margin-top: -1px;
-    padding-right: 0px;
-    color: #e62e22;
-    font-size: 2.1rem;
-    font-weight: bold;
-    text-align: right;
-    position: absolute;
-    margin-left: -3px;
-    font-family: sans-serif;
-    width: 28px;
+  content: counter(bck-li-counter);
+  margin-top: -10px;
+  padding-right: 0px;
+  color: #A9A9A8;
+  font-size: 9.5rem;
+  font-weight: 100;
+  text-align: right;
+  position: absolute;
+  left: -30px ;
+  font-family: 'Conv_HelveticaLTStd-Light', sans-serif;
 }
 
-/*Lista ordenada 2*/
+/*LISTA ORDENADA 2*/
 
-#actividad .content .cke_contents .bck-ol-2 li, 
-#actividad .content .texto_curso .bck-ol-2 li, 
-#actividad .popover-content .bck-ol-2 li, 
+#actividad .content .cke_contents .bck-ol-2,
+#actividad .content .texto_curso .bck-ol-2,
+#actividad .content .workspace ul li .bck-ol-2 {
+    list-style-type: none;
+    counter-reset: bck-li-counter;
+    padding-inline-start: 20px;
+    font-family: 'Conv_FuturaStd-Bold', sans-serif;
+}
+
+#actividad .content .cke_contents .bck-ol-2 li,
+#actividad .content .texto_curso .bck-ol-2 li,
+#actividad .popover-content .bck-ol-2 li,
 #actividad .content .workspace ul li .bck-ol-2 li {
     counter-increment: bck-li-counter;
-    padding-left: 20px;
+    padding-left: 25px;
     position: relative;
     z-index: 0;
-    color: #333;
-    font-size: 1.8rem;
-    font-weight: 100;
-    font-family: sans-serif;
+    color: #4A9BBB;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-#actividad .content .cke_contents .bck-ol-2 li:before, 
-#actividad .content .texto_curso ol.bck-ol-2 li:before, 
-#actividad .popover-content ol.bck-ol-2 li:before, 
+
+#actividad .content .cke_contents .bck-ol-2 li:before,
+#actividad .content .texto_curso ol.bck-ol-2 li:before,
+#actividad .popover-content ol.bck-ol-2 li:before,
 #actividad .content .workspace ul li ol.bck-ol-2 li:before {
-    content: counter(bck-li-counter);
-    margin-top: 0;
+    content: counter(bck-li-counter, upper-alpha);
+    margin-top: -9px;
     padding-right: 0px;
     color: #A6A6AA;
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 4.85rem;
+    font-weight: bolder;
     text-align: right;
     position: absolute;
-    left: 0px;
-    font-family: inherit;
-    border: none;
-    background: inherit;
-    border-radius: inherit;
-    padding: 0;
-    width: 28px;
-    margin-left: -15px;
+    left: -22px ;
 }
 
-/*Lista ordenada 3*/
+/*LISTA ORDENADA 3*/
 
-#actividad .content .cke_contents .bck-ol-3 li, 
-#actividad .content .texto_curso .bck-ol-3 li, 
-#actividad .popover-content .bck-ol-3 li, 
+#actividad .content .cke_contents .bck-ol-3,
+#actividad .content .texto_curso .bck-ol-3,
+#actividad .content .workspace ul li .bck-ol-3 {
+    list-style-type: none;
+    counter-reset: bck-li-counter;
+    padding-inline-start: 20px;
+    
+}
+
+#actividad .content .cke_contents .bck-ol-3 li,
+#actividad .content .texto_curso .bck-ol-3 li,
+#actividad .popover-content .bck-ol-3 li,
 #actividad .content .workspace ul li .bck-ol-3 li {
     counter-increment: bck-li-counter;
-    padding-left: 5px;
+    padding-left: 15px;
     position: relative;
     z-index: 0;
     font-size: 1.85rem;
     font-weight: bold;
     list-style-type: none;
     font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
+
 }
 
-#actividad .content .cke_contents ol.bck-ol-3 li:before, 
-#actividad .content .texto_curso ol.bck-ol-3 li:before, 
-#actividad .popover-content ol.bck-ol-3 li:before, 
+#actividad .content .cke_contents ol.bck-ol-3 li:before,
+#actividad .content .texto_curso ol.bck-ol-3 li:before,
+#actividad .popover-content ol.bck-ol-3 li:before,
 #actividad .content .workspace ul li ol.bck-ol-3 li:before {
     content: counter(bck-li-counter);
     margin-top: -2px;
     padding-right: 0px;
-    color: #fff;
-    font-size: 2.1rem;
-    background-color: #61C0E9;
-    border-radius: 100%;
+    color: #BE1F24;
+    font-size: 2.4rem;
     font-weight: bold;
-    text-align: center;
-    width: 25px;
+    text-align: right;
+    left: -30px;
     position: absolute;
-    left: -27px;
+    left: -18px ;
     font-family: 'Conv_HelveticaLTStd-Blk', sans-serif;
 }
 
-/*Lista ordenada 4*/
 
-#actividad .content .cke_contents .bck-ol-4 li, 
-#actividad .content .texto_curso .bck-ol-4 li, 
-#actividad .popover-content .bck-ol-4 li, 
-#actividad .content .workspace ul li .bck-ol-4 li {
-    counter-increment: bck-li-counter;
-    padding-left: 0px;
-    position: relative;
-    z-index: 0;
-    color: #414141;
-    font-size: 1.8rem;
-    font-weight: bold;
-    font-family: sans-serif;
-    text-align: left;
+/*LISTA ORDENADA 4*/
+
+#actividad .content .cke_contents .bck-ol-4,
+#actividad .content .texto_curso .bck-ol-4,
+#actividad .content .workspace ul li .bck-ol-4 {
+    list-style-type: none;
+    counter-reset: bck-li-counter;
+    padding-inline-start: 20px;
+    
+    
 }
 
-#actividad .content .cke_contents .bck-ol-4 li:before, 
-#actividad .content .texto_curso .bck-ol-4 li:before, 
-#actividad .popover-content .bck-ol-4 li:before, 
-#actividad .content .workspace ul li .bck-ol-4 li:before,
+#actividad .content .cke_contents .bck-ol-4 li,
+#actividad .content .texto_curso .bck-ol-4 li,
+#actividad .popover-content .bck-ol-4 li,
+#actividad .content .workspace ul li .bck-ol-4 li {
+    counter-increment: bck-li-counter;
+    padding-left: 3px;
+    position: relative;
+    z-index: 0;
+    color: #1D1D1B;
+    font-size: 1.8rem;
+    font-weight: 100;
+    text-align: left;
+    margin-top: 5px;
+    font-family: 'Conv_CheltenhamStd-Book', serif;
+}
+
+
+#actividad .content .cke_contents ol.bck-ol-4 li:before,
 #actividad .content .texto_curso ol.bck-ol-4 li:before,
-#actividad .content .texto_curso ol.bck-ol-4 li:before, 
-#actividad .popover-content ol.bck-ol-4 li:before, 
-#actividad .content .workspace ul li ol.bck-ol-4 li:before,
- #actividad .content .texto_curso ol.bck-ol-4 li:before {
+#actividad .popover-content ol.bck-ol-4 li:before,
+#actividad .content .workspace ul li ol.bck-ol-4 li:before {
     content: counter(bck-li-counter);
-    margin-top: -1px;
+    margin-top: 0px;
     padding-right: 0px;
-    color: #e62e22;
-    font-size: 2.1rem;
+    color: #1D1D1B;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: right;
+    position: absolute;
+    left: -15px;
+    font-family: 'Conv_CheltenhamStd-Bold', sans-serif; 
+}
+/**/
+
+/*LISTA ORDENADA 5*/
+
+
+#actividad .content .cke_contents .bck-ol-5,
+#actividad .content .texto_curso .bck-ol-5,
+#actividad .content .workspace ul li .bck-ol-5 {
+    list-style-type: none;
+    counter-reset: bck-li-counter;
+    padding-inline-start: 20px;
+    font-family: 'Conv_CheltenhamStd-Book', serif;
+}
+
+#actividad .content .cke_contents .bck-ol-5 li,
+#actividad .content .texto_curso .bck-ol-5 li,
+#actividad .popover-content .bck-ol-5 li,
+#actividad .content .workspace ul li .bck-ol-5 li {
+    counter-increment: bck-li-counter;
+    padding-left: 15px;
+    position: relative;
+    z-index: 0;
+    font-family: 'Conv_CheltenhamStd-Book', serif;
+}
+
+#actividad .content .cke_contents ol.bck-ol-5 li:before,
+#actividad .content .texto_curso ol.bck-ol-5 li:before,
+#actividad .popover-content ol.bck-ol-5 li:before,
+#actividad .content .workspace ul li ol.bck-ol-5 li:before {
+    content: counter(bck-li-counter, lower-alpha);
+    margin-top: 0px;
+    padding-right: 0px;
+    color: #414141;
+    font-size: 1.4rem;
     font-weight: bold;
     text-align: right;
     position: absolute;
-    margin-left: -3px;
-    font-family: sans-serif;
-    width: 28px;
-    left: -30px;
+    left: 0px;
+    font-family: 'Conv_CheltenhamStd-Bold', sans-serif; 
 }
 
-/*---------------------------------------------------LISTAS DESORDENADAS---------------------------------------*/
 
-/*Lista desordenada 1*/
-#actividad .content .cke_contents .bck-ul-1 li:before, 
-#actividad .content .texto_curso .bck-ul-1 li:before, 
-#actividad .content .workspace ul li .bck-ul-1 li:before {
-    content: "";
+/**/
+
+/*FLIPBOX*/
+
+
+
+body:not(.edit) .bck-flipbox-face.front {
+    color: #000;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+body:not(.edit) .bck-flipbox-face.front, body:not(.edit) .bck-flipbox-face.back {
+    backface-visibility: hidden;
+    border: none;
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    height: 100%;
+    width: 100%;
+    background-color: #c8c8c8;
+}
+
+body:not(.edit) .bck-flipbox-face.back {
+    background-color: #d4d4d4;
     position: absolute;
-    height: 6px;
-    width: 6px;
-    background-color: #878786;
-    margin-top: 10px;
-    margin-left: -15px;
-    margin-right: 7px;
-    margin-bottom: 2px;
-    border-radius: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
 }
 
-/*Lista desordenada 2*/
-#actividad .content .cke_contents .bck-ul-2 li:before, 
-#actividad .content .texto_curso .bck-ul-2 li:before, 
-#actividad .content .workspace ul li .bck-ul-2 li:before {
-    content: "";
-    position: absolute;
-    height: 6px;
-    width: 6px;
-    background-color: #C6C6C6;
-    margin-top: 10px;
-    margin-left: -15px;
-    margin-right: 7px;
-    margin-bottom: 2px;
-    border-radius: 0;
+body:not(.edit) .back .bck-flipbox-title, body:not(.edit) .back .bck-flipbox-section {
+    color: #4D4D4D;
 }
 
-/*-----------------------------------------------------------CAJAS---------------------------------------------------------*/
+/*titulo flipbox*/
 
-.bck-box.center .bck-content {
-    position: unset;
+body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
+    background-color: transparent;
+    padding: 20px;
+    padding-bottom: 50px;
 }
 
-/*Caja 1*/
+body:not(.edit) .front .bck-flipbox-title, body:not(.edit) .front .bck-flipbox-section {
+    color: #fff;
+    font-family: 'Conv_FuturaStd-Bold', sans-serif;
+    font-size: 2.3rem;
+}
+
+
+/*TABLAS TAB*/
+
+/*tabs*/
+body:not(.edit) .bck-tabs-box.vertical-tabs .bck-tabslists {
+    float: none;
+    overflow: auto;
+    max-height: 400px;
+    float: left;
+    width: 50%;
+    display: block;
+}
+
+body:not(.edit) .bck-tabs-box.vertical-tabs .div-contents {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 1px solid #ccc;
+    border-right: 0;
+}
+
+.bck-tabtitles {
+   background-color: #d4d4d4;
+    overflow: hidden;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 14px;
+    transition: .3s;
+    display: inline-block;
+    float: left;
+    color: #fff;
+    font-family: 'Conv_FuturaStd-Book', sans-serif;
+
+}
+
+.bck-tabtitles:hover {
+background-color: transparent;
+cursor: default;
+}
+
+.bck-tabslists {
+    overflow: hidden;
+    background-color: #d4d4d4;
+}
+
+
+/*tab vertical*/
+
+body:not(.edit) .bck-tabs-box.vertical-tabs .bck-tabpanel {
+    height: 400px;
+    float: left;
+    width: 100%;
+    padding: 0 12px;
+    overflow: auto;
+    font-size: 1.6rem;
+    font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
+}
+
+body:not(.edit) .bck-tabs-box {
+    background-color: #d4d4d4;
+    border: 1px solid #ccc;
+}
+
+/*tab horizontal*/
+
+body:not(.edit) .bck-tabcontents .div-contents {
+    display: none;
+    padding: 6px 12px;
+    background-color: #fff;
+    padding: 6px 12px;
+    border-left: 0;
+    border-top: 1px solid #ccc;
+    max-height: 100%;
+    max-width: 100%;
+    font-size: 1.6rem;
+    font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
+}
+
+
+/*ACTIVIDADES*/
+/*sopa de letras*/
+
+.rf-wordcontainer li .index {
+    margin-right: 5px;
+    display: none;
+}
+
+/*Marcar respuesta*/
+
+#actividad .workspace.chooseblanks .inline-answer a {
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #cfcfcf;
+    padding: 3px 6px;
+    margin: 0 2px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+}
+
+/*crucigrama*/
+
+.slide.crosswords-puzzle .enunciados {
+    border: 2px solid #dedede;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    display: inline-block;
+    width: 350px;
+    padding: 1rem 3rem;
+    line-height: 2.1rem;
+    font-family: 'Conv_CheltenhamStd-Book', serif;
+    display: none;
+}
+
+.puzzle-wrapper {
+    float: left;
+    width: 54%;
+    margin-top: 13px;
+    margin-right: 10px;
+    margin-left: 30%;
+    font-size: 1.5rem;
+}
+
+
+
+/*Actividad tipo test*/
+
+#actividad .workspace.test .respuestas li {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Conv_CheltenhamStd-Book', serif;
+}
+
+/**/
+
+
+
+
+/*tooltip*/
+.bck-tooltip {
+    text-decoration: none;
+    color: #90C73D;
+    font-weight: bold;
+}
+
+
+/*Cajas*/
+
+/*CAJA 1*/
 
 .bck-box.bck-box-1 {
-    /*min-height: 80px;*/
+    min-height: 80px;
     margin-top: 15px;
-    background-color: transparent;
+    background-color: #D4D4D4;
     padding: 10px;
-    position: relative;
 }
 
-.bck-box-1 > .bck-title {
+
+.bck-box-1 .bck-title {
     border-bottom: 0px solid #eee;
     color: #fff;
     font-size: 2.3rem;
     font-weight: 600;
-    background-color: #BABC0F;
+    background-color: #D4D4D4;
     text-align: left;
     padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 15px;
     font-family: 'Conv_HelveticaLTStd-Blk', sans-serif;
-    width: fit-content;
-    -webkit-width: fit-content;
-    -moz-width: fit-content;
-    -ms-width: fit-content;
-    -o-width: fit-content;
-    margin-left: -5px;
-    background-image: none;
-    position: absolute;
-    margin-top: -15px;
-} 
-
-.bck-box-1 > .bck-title:before {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 0px solid transparent;
-    border-top: 20px solid #43352D;
-    padding: 0px;
-    margin-top: 37px;
-    margin-left: 14px;
 }
 
-.bck-box.bck-box-1 > .bck-content {
-    padding: 30px 20px 20px 20px;
-    background-color: #fff;
+.bck-box.bck-box-1 .bck-content {
+    padding: 20px;
+    background-color: #D4D4D4;
     font-weight: 400;
     font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
-    border: 10px solid #E6EBC5;
-
 }
 
-/*Caja 2*/
+
+
+
+
+/*CAJA 2*/
 
 .bck-box.bck-box-2 {
-    /*min-height: 80px;*/
-    margin-top: 15px;
-    background-color: transparent;
-    padding: 10px;
-    position: relative;
-}
-
-.bck-box-2 > .bck-title {
-    border-bottom: 0px solid #eee;
-    color: #fff;
-    font-size: 2.3rem;
-    font-weight: 600;
-    background-color:#EC5C5D;
+    background-color: #DADADA;
+    border-radius: 10px;
     text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: 'Conv_HelveticaLTStd-Blk', sans-serif;
-    width: fit-content;
-    -webkit-width: fit-content;
-    -moz-width: fit-content;
-    -ms-width: fit-content;
-    -o-width: fit-content;
-    margin-left: -5px;
-    background-image: none;
-    position: absolute;
-    margin-top: -15px;
-} 
-
-.bck-box-2 > .bck-title:before {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 0px solid transparent;
-    border-top: 20px solid #43352D;
-    padding: 0px;
-    margin-top: 37px;
-    margin-left: 14px;
+    padding: 20px 30px;
 }
 
-.bck-box.bck-box-2 > .bck-content {
-    padding: 30px 20px 20px 20px;
-    background-color: #fff;
-    font-weight: 400;
-    font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
-    border: 10px solid #FEECC2;
+.bck-box-2 .bck-title {
+    padding: 20px;
+    background-image: url(images/para_acabar_tit_caja_2.png);
+    background-size: contain;
+    background-position: 10px;
+    background-repeat: no-repeat;
 }
 
-/*Caja 3*/
+.bck-box.bck-box-2 .bck-content {
+    padding: 10px 25px;
+    font-family: 'Conv_FuturaStd-Light', sans-serif;
+}
+
+
+/*CAJA 3*/
 
 .bck-box.bck-box-3 {
-    /*min-height: 80px;*/
-    margin-top: 15px;
-    background-color: transparent;
+    background-color: #F6F6F6;
     padding: 10px;
-    position: relative;
+    
 }
 
-.bck-box-3 > .bck-title {
-    border-bottom: 0px solid #eee;
-    color: #fff;
+.bck-box-3 .bck-title {
+    padding-left: 20px;
+    padding-top: 15px;
     font-size: 2.3rem;
     font-weight: 600;
-    background-color: #FECD3E;
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     font-family: 'Conv_HelveticaLTStd-Blk', sans-serif;
-    width: fit-content;
-    -webkit-width: fit-content;
-    -moz-width: fit-content;
-    -ms-width: fit-content;
-    -o-width: fit-content;
-    margin-left: -20px;
-    position: absolute;
-    margin-top: -20px;
+
 }
 
-.bck-box-3 > .bck-title:before {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 0px solid transparent;
-    border-top: 20px solid #43352D;
-    padding: 0px;
-    margin-top: 37px;
-    margin-left: 14px;
-}
-
-.bck-box.bck-box-3 > .bck-content {
-    padding: 30px 20px 20px 20px;
-    background-color: #B6DEF3;
-    font-weight: 400;
+.bck-box.bck-box-3 .bck-content {
+    padding: 20px;
     font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
-    border: none;
 }
 
-/*Caja 4*/
+/**/
+
+
+/*CAJA 4*/
 
 .bck-box.bck-box-4 {
     background-color: #fff;
-    border-radius: 0px;
+    border-radius: 10px;
     text-align: left;
-    padding: 10px 20px;
-    border: none;
-    background: #D4EDFC;
+    padding: 15px 30px;
+    border: solid 2px #DADADA
 }
 
 .bck-box-4 .bck-title {
     padding: 10px;
-    color: #009FE3;
-    font-weight: bold;
+
 }
 
 .bck-box.bck-box-4 .bck-content {
-    padding: 10px;
-    font-family: sans-serif;
+    padding: 10px 25px;
+    font-family: 'Conv_FuturaStd-Light', sans-serif;
 }
 
-/*Caja 5 - autoevaluacion*/
+/**/
 
-.bck-box.autoevaluacion {
-    /*min-height: 80px;*/
-    margin-top: 15px;
-    background-color: transparent;
-    padding: 10px;
+
+
+
+.bck-title:before {
+    content: " ";
+    position: absolute;
+    left: -14px;
+    z-index: 100;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+
+
+/**/
+
+/*ENLACES*/
+
+/**TÃ­tulos**/
+
+.titulobase{
+    font-family: 'Averia Serif Libre', Georgia, serif;
+}
+
+
+
+
+
+/**2**/
+
+.titulo-2 {
     position: relative;
-}
-
-.bck-box.autoevaluacion:before {
-    color: #fff;
-    font-size: 2.3rem;
-    background-color: #E62E22;
-    padding: 5px 10px;
-    font-family: 'FontAwesome';
-    content: "\f05a";
-    margin-left: -20px;
-    margin-top: 35px;
-    position: absolute;
-}
-
-.bck-box.autoevaluacion:after {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 0px solid transparent;
-    border-top: 20px solid #43352D;
-    padding: 0px;
-    margin-left: -20px;
-    top: 75px;
-}
-
-.bck-box.autoevaluacion > .bck-content {
-    padding: 20px 35px;
-    background-color: #FFE4A3;
-    font-weight: 400;
-    font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
-    border: none;
-    margin-top: -13px;
-    z-index: -1;
-    -webkit-box-shadow: 8px 8px 0 0 #FDC300;
-     box-shadow: 8px 8px 0 0 #FDC300;
-}
-
-/*Caja 6 - coevaluacion*/
-
-.bck-box.coevaluacion {
-    background-color: transparent;
-    padding: 5px 10px 10px 10px;
-    border-left: 10px solid #C6C6C6;
-    color: #878786;
+    border-bottom-style: solid;
+    border-width: 1px;
     font-weight: bold;
+    color: black;
+    line-height: 4.0rem;
+    padding-left: 40px;
 }
 
-.bck-box.coevaluacion > .bck-title {
-    font-size: 1.9rem;
-    margin-bottom: 0px;
-    padding-left: 5px;
 
+/**ImÃ¡genes-Enlaces**/
+
+.presentation-img, .presentation-img .bck-content, .presentation-img p, #actividad .presentation-img img,
+.presentation-video, .presentation-video .bck-content, .presentation-video p, #actividad .presentation-video img,
+.presentation-video-2, .presentation-video-2 .bck-content, .presentation-video-2 p, #actividad .presentation-video-2 img,
+.slider-img, .slider-img .bck-content, .slider-img p, #actividad .slider-img img,
+.trabajar-img, .trabajar-img .bck-content, .trabajar-img p, #actividad .trabajar-img img,
+.escuchar-box, .escuchar-box .bck-content, .escuchar-box p, #actividad .escuchar-box img,
+.actividad-scorm-box, .actividad-scorm-box .bck-content, .actividad-scorm-box p, #actividad .actividad-scorm-box img {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
 }
 
-.bck-box.coevaluacion > .bck-content {
-    padding: 5px 5px 0px 5px;
-    font-weight: bold;
-    font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
-
+.presentation-img, .presentation-video, .presentation-video-2, .slider-img, .trabajar-img, .escuchar-box, .actividad-scorm-box {
+    position: relative;
+    margin-top: 20px;
 }
 
-/*Caja 7 - heteroevaluacion*/
-
-.bck-box.heteroevaluacion {
-    background-color: #fff;
-    padding: 0px;
-    border: 3px solid #9D9D9C;
-    border-radius: 3px;
+.presentation-img .bck-content:before, .presentation-video .bck-content:before, .presentation-video-2 .bck-content:before,
+.slider-img .bck-content:before, .trabajar-img .bck-content:before, .escuchar-box .bck-content:before, .actividad-scorm-box .bck-content:before {
+    content: "";
+    background-color: purple;
+    border-top-left-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
 }
 
-.bck-box.heteroevaluacion > .bck-title {
-    margin-bottom: 0px;
-    background-color: #ECECEC;
-    padding: 10px 10px 10px 20px;
-
+.presentation-img .bck-content:after, .presentation-video .bck-content:after, .presentation-video-2 .bck-content:after,
+.slider-img .bck-content:after, .trabajar-img .bck-content:after, .escuchar-box .bck-content:after, .actividad-scorm-box .bck-content:after {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    height: 30px;
+    width: 30px;
 }
 
-.bck-box.heteroevaluacion > .bck-content {  
-    padding: 15px 20px;
-}
 
-/*Caja 8 - laboratorio2*/
 
-.bck-box.laboratorio2 {
-    background-color: #ECECEC;
-    padding: 0px;
-    border: none;
-    border-radius: 3px;
-}
+/**/
 
-.bck-box.laboratorio2 > .bck-title {
-    margin-bottom: 0px;
-    background-color: transparent;
-    padding: 10px 10px 10px 20px;
+/**Iconos**/
 
-}
-
-.bck-box.laboratorio2 > .bck-content {  
-    padding: 15px 20px;
-    background-color: transparent;
-}
-
-/*----------------------------------------------------------Audio--------------------------------------------------------*/
-
-#actividad .player.audio {
-    background-size: 100%;
-    background-position: 0;
-    background-color: transparent;
+.item-container .icon:before {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
     vertical-align: middle;
-    height: 26px !important;
+    height: 25px;
+    width: 25px;
 }
 
-/*-----------------------------------------------------------Pop Up-----------------------------------------------------*/
+.item-container .icon-clase:before {
+    background-image: url(icon_clase.png);
+}
 
-.info-template .info-icon {
-    background: #e62e22;
+.item-container .icon-clase-rosa:before {
+    background-image: url(icon_clase_rosa.png);
+}
+
+.item-container .icon-conversation:before {
+    background-image: url(icon_conversation.png);
+}
+
+.item-container .icon-conversation-verde:before {
+    background-image: url(icon_conversacion_verde.png);
+}
+
+.item-container .icon-conversation-azul:before {
+    background-image: url(icon_conversacion_azul.png);
+}
+
+.item-container .icon-conversation-rosa:before {
+    background-image: url(icon_conversacion_rosa.png);
+}
+
+.item-container .icon-tool:before {
+    background-image: url(icon_herramienta.png);
+}
+
+.item-container .icon-tool-verde:before {
+    background-image: url(icon_herramienta_verde.png);
+}
+
+.item-container .icon-tool-azul:before {
+    background-image: url(icon_herramienta_azul.png);
+}
+
+.item-container .icon-tool-rosa:before {
+    background-image: url(icon_herramienta_rosa.png);
+}
+
+.item-container .icon-llave:before {
+    background-image: url(icon_llave.png);
+}
+
+.item-container .icon-raton:before {
+    background-image: url(icon_raton.png);
+}
+
+.item-container .icon-museo:before {
+    background-image: url(icon_museo.png);
+}
+
+.item-container .icon-talento:before {
+    background-image: url(icon_talento.png);
+}
+
+.item-container .icon-talento-2:before {
+    background-image: url(icon_talento-2.png);
+}
+
+.item-container .icon-talento-verde:before {
+    background-image: url(icon_talento_verde.png);
+}
+
+/**Iconos con nÃºmero**/
+.item-container .icono {
+    font-size: 2rem;
     color: #fff;
-    font-family: 'FontAwesome';
-    font-size: 18px;
-    text-align: center;
+    background-color: #E30045;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    padding: 2px 5px 2px 10px;
+    margin-right: 5px;
 }
 
-.info-template .info-title {
-    color: #e62e22;
+.item-container .icono:after {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    margin-left: 4px;
+    margin-bottom: 4px;
 }
 
-.info-template .info-title.shown {
-    font-size: 1.3rem;
+
+
+/**/
+
+/**TABLA**/
+
+.bck-table {
+    border: 0;
 }
 
-.info-popover .popover-title, 
-.popover-template .popover-title {
-    background: #e62e22;
-    padding-left: 20px;
+.bck-table td {
+    padding: 10px;
+    border-color: #414141;
+}
+
+table td.bck-td {
+    background-color: #878786;
     color: #fff;
-    font-size: 1.6rem;
-    border-radius: 0;
-    padding-top: 13px;
+    font-weight: 600;
+    font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
 }
 
-.popover-template {
-    border-radius: 0;
-}
-
-.fa-times:before {
+table td.bck-td-dos {
+    background-color: #D4D4D4;
     color: #fff;
-}
-
-.fa-info:before {
-    color: #fff;
-}
-
-#actividad .info-button {
-    background: #e62e22;
-}
-
-/*--------------------------------------Enlace a actividad---------------------------------------*/
-
-.texto_curso .bck-activity-link {
-    cursor: pointer;
-    border-bottom: 2px solid #fdc300;
-    margin-bottom: 10px;
-    width: fit-content;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: -ms-fit-content;
-    width: -o-it-content;
-    padding: 5px 10px 5px 0px;
-}
-
-/*---------------------------------------------SECCIONES------------------------------------------*/
-
-/*------------SECCION AZUL sgel2021_compa_azul---------*/
-
-.sgel2021_compa_azul .bck-title1 {
-        background-color: #009FE3;
-}
-
-.sgel2021_compa_azul .evaluacionsumativa {
-    color: #009FE3;
-    border: 3px dotted #009FE3;
+    font-weight: 600;
+    font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
 }
 
 
-#actividad .content .sgel2021_compa_azul .cke_contents .bck-ol-1 li:before, 
-#actividad .content .sgel2021_compa_azul .texto_curso .bck-ol-1 li:before, 
-#actividad .popover-content  .sgel2021_compa_azul .bck-ol-1 li:before, 
-#actividad .content .sgel2021_compa_azul .workspace ul li .bck-ol-1 li:before {
-    color: #009FE3;
-}
+/**/
 
-
-
-/*------------SECCION VERDE OSCURO sgel2021_compa_verdeoscuro---------*/
-
-.sgel2021_compa_verdeoscuro .bck-title1 {
-        background-color: #429A5C;
-}
-
-.sgel2021_compa_verdeoscuro .evaluacionsumativa {
-    color: #429A5C;
-    border: 3px dotted #429A5C;
-}
-
-
-#actividad .content .sgel2021_compa_verdeoscuro .cke_contents .bck-ol-1 li:before, 
-#actividad .content .sgel2021_compa_verdeoscuro .texto_curso .bck-ol-1 li:before, 
-#actividad .popover-content  .sgel2021_compa_verdeoscuro .bck-ol-1 li:before, 
-#actividad .content .sgel2021_compa_verdeoscuro .workspace ul li .bck-ol-1 li:before {
-    color: #429A5C;
-}
-
-/*------------SECCION VERDE CLARO sgel2021_compa_verdeclaro---------*/
-
-.sgel2021_compa_verdeclaro .bck-title1 {
-        background-color: #9AC23C;
-}
-
-.sgel2021_compa_verdeclaro .evaluacionsumativa {
-    color: #9AC23C;
-    border: 3px dotted #9AC23C;
-}
-
-#actividad .content .sgel2021_compa_verdeclaro .cke_contents .bck-ol-1 li:before, 
-#actividad .content .sgel2021_compa_verdeclaro .texto_curso .bck-ol-1 li:before, 
-#actividad .popover-content  .sgel2021_compa_verdeclaro  .bck-ol-1 li:before, 
-#actividad .content .sgel2021_compa_verdeclaro .workspace ul li .bck-ol-1 li:before {
-    color: #9AC23C;
-}
-
-/*------------SECCION NARANJA CLARO sgel2021_compa_naranjaclaro---------*/
-
-.sgel2021_compa_naranjaclaro .bck-title1 {
-        background-color: #FDC300;
-}
-
-.sgel2021_compa_naranjaclaro .evaluacionsumativa {
-    color: #FDC300;
-    border: 3px dotted #FDC300;
-}
-
-#actividad .content .sgel2021_compa_naranjaclaro .cke_contents .bck-ol-1 li:before, 
-#actividad .content .sgel2021_compa_naranjaclaro .texto_curso .bck-ol-1 li:before, 
-#actividad .popover-content  .sgel2021_compa_naranjaclaro .bck-ol-1 li:before, 
-#actividad .content .sgel2021_compa_naranjaclaro .workspace ul li .bck-ol-1 li:before {
-    color: #FDC300;
-}
-
-/*------------SECCION NARANJA OSCURO sgel2021_compa_naranjaoscuro---------*/
-
-.sgel2021_compa_naranjaoscuro .bck-title1 {
-        background-color: #F39200;
-}
-
-.sgel2021_compa_naranjaoscuro .evaluacionsumativa {
-    color: #F39200;
-    border: 3px dotted #F39200;
-}
-
-#actividad .content .sgel2021_compa_naranjaoscuro .cke_contents .bck-ol-1 li:before, 
-#actividad .content .sgel2021_compa_naranjaoscuro .texto_curso .bck-ol-1 li:before, 
-#actividad .popover-content  .sgel2021_compa_naranjaoscuro .bck-ol-1 li:before, 
-#actividad .content .sgel2021_compa_naranjaoscuro .workspace ul li .bck-ol-1 li:before {
-    color: #F39200;
-}
-
-/*------------SECCION MORADO sgel2021_compa_morado---------*/
-
-.sgel2021_compa_morado .bck-title1 {
-        background-color: #7D6FAD;
-}
-
-
-/*------------SECCION REFLEXIONEVALUACION sgel2021_compa_reflexionevaluacion---------*/
-
-.sgel2021_compa_reflexionevaluacion .bck-title1 {
-    text-align: left;
-    font-size: 2.5rem;
-    padding: 30px 15px;
-    background-color: #0EB2E2;
-    display: block;
+.textarea-container {
     width: 100%;
 }
 
-.sgel2021_compa_reflexionevaluacion .titulobase {
+#actividad .workspace.multiple-choice .opcion {
+    background-color: white;
+}
+
+.cke_reset {
+    background: white;
+}
+
+ .btn-primary.disabled, .btn-primary.disabled:focus {
+    background-color: #D4D4D4;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 0px;
+}
+
+.btn-primary{
+    background-color: #85c939;
+}
+
+
+#indice .unit-content .actividades .item .title {
+    font-weight: 600;
+}
+
+/**/
+
+/* Seccion Actividades */
+#actividad .carousel-inner .actividades .item-container {
+    background-color: #FFF;
+    position: relative;
+    z-index: 0;
+}
+
+#actividad .carousel-inner .actividades .item-container:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    border-top: 85px solid #F5821F;
+    border-left: 77px solid #F5821F;
+    border-right: 77px solid #F5821F;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0 ;
+    background-color: transparent;
+    z-index: -1;
+
+}
+
+
+/* CKEDITOR */
+.actividades .bck-title1 {
+    color: #F5821F;
+    position: relative;
     font-weight: bold;
-    color: #0EB2E2;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
 }
 
-
-/*---------------------------------------COURSETAGS--------------------------------------------------------*/
-
-/*------------------------------------------Coursetag azul---------------------------------*/
-
-/*-------------------TOC - coursetag azul--------------------------*/
-
-.coursetag_sgel2021_compa_azul #indice .units ul li.active:not(.disabled), 
-.coursetag_sgel2021_compa_azul #indice .units ul li:focus:not(.disabled) {
-    background: #4489c9;
+.actividades .bck-title1:before {
+    background-color: transparent;
 }
 
+/**/
 
-.coursetag_sgel2021_compa_azul #indice .units ul li.hover:not(.disabled), 
-.coursetag_sgel2021_compa_azul #indice .units ul li:hover:not(.disabled), 
-.coursetag_sgel2021_compa_azul #indice .units ul li:hover:not(.disabled) {
-    background: #b1d9ff !important;
+/* Seccion primera */
+#actividad .carousel-inner .primera {
+    background: linear-gradient(to bottom right, #d0cae6, #6e6097);
 }
 
-
-.coursetag_sgel2021_compa_azul #indice .actividades a:hover {
-    color: #4489c9;
+#actividad .carousel-inner .primera .item-container {
+    background-color: transparent !important;
 }
 
+#actividad .carousel-inner .primera .slider-control .title,
+#actividad .carousel-inner .primera .slider-control:after,
+#actividad .carousel-inner .primera .slider-control:before {
+    color: white;
+}
+/**/
 
-/*------------------------------Navbar - Coursetag azul-----------------------------*/
-
-.coursetag_sgel2021_compa_azul.body_clase .companeros2021_demo-navbar {
-    background-color: #4489c9;
+/* Seccion segunda */
+#actividad .carousel-inner .segunda {
+    background-color: #9665AB;
 }
 
-
-/*------------------------------Menú lateral - coursetag azul------------------------------*/
-
-.coursetag_sgel2021_compa_azul #book-index .col-main {
-    background: #4489c9 !important;
+#actividad .carousel-inner .segunda .item-container {
+    background-color: transparent !important;
 }
 
-.coursetag_sgel2021_compa_azul .libro-left ul li a.book-index.active {
-    background-color: #4489c9;
+#actividad .carousel-inner .segunda .layout {
+    background-color: #e5b7e4;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.coursetag_sgel2021_compa_azul #book-index #indice .units ul li:not(.disabled) a:hover, 
-.coursetag_sgel2021_compa_azul #book-index #indice .units ul li.active a {
+#actividad .carousel-inner .segunda .slider-control .title,
+#actividad .carousel-inner .segunda .slider-control:after,
+#actividad .carousel-inner .segunda .slider-control:before {
+    color: white;
+}
+/**/
+
+/**iframe**/
+
+#iframe_div.scorm {
+    width: 100% ! important;
+    height: 100% ! important;
+    top: 0px ! important;
+    left: 0px ! important;
+    background-color: #CCCCCC;
+}
+
+#iframe_div.scorm iframe#class_iframe {
+    width: 100% ! important;
+    height: 100% ! important;
+}
+
+#iframe_div.scorm .btn-close-iframe {
+    right: 0px;
+    top: 15px;
+    margin-top: 20px;
+}
+
+#iframe_div.scorm .btn-close-iframe span {
+    display: none;
+}
+
+#iframe_div.scorm .btn-close-iframe a {
+    padding: 16px;
+    background-color: #E9E9E9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 1px 5px #aaa;
+}
+
+#iframe_div.scorm .btn-close-iframe a .fa {
+    font-size: 2rem;
+}
+
+/**/
+
+/**Dropdown**/
+
+.bck-dropdown {
+    border-top-right-radius: 20px;
+}
+
+.bck-dropdown-1 .bck-dropdown-icon {
+    color: white;
+}
+
+.bck-dropdown-1 .bck-dropdown-icon > .fa {
+    border: 3px solid white;
+}
+
+.bck-dropdown-1 .bck-dropdown-titulo {
+    color: white;
+}
+
+/*Desplegable 1*/
+.bck-dropdown.bck-dropdown-1 {
+    background-color: #D4D4D4;
+    border: none;
+    margin-top: 10px;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
+}
+
+.bck-dropdown-1 .bck-dropdown-button {
+    margin-top: 0px;
+    font-size: 1.2rem;
+}
+
+.bck-dropdown-1 .bck-dropdown-icon {
+    background-color: #D4D4D4;
+    width: 25px;
+    height: 10px;
+}
+
+.bck-dropdown-1 .bck-dropdown-icon > .fa {
+    border: 0px solid white;
+}
+
+.bck-dropdown-1 .fa-chevron-up:before, .bck-dropdown-1 .fa-chevron-down:before {
+    font-size: 1.2rem;
     color: #fff;
-    background: #4489c9 !important;
 }
 
-
-.coursetag_sgel2021_compa_azul #book-index #indice .unit-content .actividades .item:hover, 
-.coursetag_sgel2021_compa_azul #book-index #indice .unit-content .actividades .item.active, 
-.coursetag_sgel2021_compa_azul #book-index #indice .unit-content .actividades .item.current {
+.bck-dropdown-1 .bck-dropdown-titulo {
+    font-size: 2.5rem;
+    padding-left: 0px;
+    font-weight: bold;
     color: #fff;
-    background: #97c2ea !important;
+    font-family: 'Conv_FuturaStd-Bold', sans-serif;
+
 }
 
-/*------------------------------------------Coursetag verde---------------------------------*/
-
-/*-------------------TOC - coursetag verde--------------------------*/
-
-.coursetag_sgel2021_compa_verde #indice .units ul li.active:not(.disabled), 
-.coursetag_sgel2021_compa_verde #indice .units ul li:focus:not(.disabled) {
-    background: #78992b;
-}
-
-
-.coursetag_sgel2021_compa_verde #indice .units ul li.hover:not(.disabled), 
-.coursetag_sgel2021_compa_verde #indice .units ul li:hover:not(.disabled), 
-.coursetag_sgel2021_compa_verde #indice .units ul li:hover:not(.disabled) {
-    background: #b9cc9a !important;
+.bck-dropdown-1 .bck-dropdown-content {
+    background-color: #D4D4D4;
+    border: none;
+    padding-left: 37px;
+    max-height: 800%;
+    font-weight: 400;
+    font-weight: 1.7rem;
+    font-family: 'Conv_HelveticaLTStd-Roman', sans-serif;
 }
 
 
-.coursetag_sgel2021_compa_verde #indice .actividades a:hover {
-    color: #78992b;
+/**/
+/****/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .body_clase .companeros2021_demo-navbar .dropdownTemas {
+        width: 435px;
+    }
+
+    .body_clase .companeros2021_demo-navbar .navbar-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .body_clase .companeros2021_demo-navbar .dropdown {
+        float: none;
+        width: 330px;
+        display: inline-block;
+    }
+
+    .body_clase .companeros2021_demo-navbar .dropdown button {
+        padding-bottom: 0px;
+    }
+
+    .body_clase:not(.edit) .logo-publisher {
+        display: none;
+    }
 }
 
 
-/*------------------------------Navbar - Coursetag verde-----------------------------*/
+@media screen and (max-width: 768px) {
+    .body_clase:not(.edit) .logo-publisher {
+        display: none;
+    }
 
-.coursetag_sgel2021_compa_verde.body_clase .companeros2021_demo-navbar {
-    background-color: #78992b;
+    .body_clase .companeros2021_demo-navbar .navbar-content h2 {
+        margin-top: 0px;
+        font-size: 2.0rem;
+        margin-bottom: 0;
+        padding-left: 45px;
+        height: 0px;
+        padding-top: 0px;
+    }
+
+    #actividad .carousel-inner .class_slide {
+        padding: 40px 20px 0px;
+    }
+
+    .navigator {
+        padding: 0px 20px;
+    }
+
+    #actividad .carousel-inner .actividades .item-container:before,
+    #actividad .carousel-inner .emprender .item-container:before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-top-width: 85px;
+        border-left-width: 20px;
+        border-right-width: 20px;
+    }
+
+    #actividad .carousel-inner .taller .item-container:before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-top-width: 60px;
+        border-left-width: 20px;
+        border-right-width: 20px;
+        bottom:0 ;
+    }
+    .open > .dropdown-menu {
+        max-width: 300px;
+    }
+
+    .body_clase .companeros2021_demo-navbar .dropdown {
+        max-width: 350px;
+        margin: 0px 15px 0px 15px;
+    }
+
+    .body_clase .companeros2021_demo-navbar .dropdownTemas {
+        border-right: 0px;
+        padding: 0px;
+        margin: 0px 15px 0px 30px;
+        max-width: 350px;
+        padding-top: 10px;
+    }
+
+    .body_clase .companeros2021_demo-navbar .dropdown button {
+        font-size: 17px;
+     }
+
+     .bck-box.blanca {
+        padding: 0px 5px;
+    }
+
+    .titulotema {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .azul {
+        font-size: 2.6rem;
+        padding: 10px 15px;
+        margin: 5% 0%;
+    }
+
+    .evaluacion {
+        font-size: 4.0rem;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .proyecto {
+        font-size: 4.0rem;
+    }
+
+    .azulquimica {
+        font-size: 2.6rem;
+    }
+
+    .bck-box.center {
+        margin-top: 5%;
+    }
+
+    .bck-box.cajamarron {
+        padding: 0px;
+    }
+
+    .content ol li, .cke_contents ol li {
+        padding-left: 14px;
+    }
+
+    .body_clase:not(.edit) .logo-publisher {
+        display: none;
+    }
+
+    .body_clase .companeros2021_demo-navbar .navbar-content h2 {
+        margin-top: 0px;
+        font-size: 2.0rem;
+        margin-bottom: 0;
+        padding-left: 45px;
+        height: 0px;
+        padding-top: 0px;
+    }
+
+    .open > .dropdown-menu {
+        max-width: 300px;
+    }
+
+    .body_clase .companeros2021_demo-navbar .dropdown {
+        max-width: 350px;
+        margin: 0px 15px 0px 15px;
+    }
+
+    .body_clase .companeros2021_demo-navbar .dropdownTemas {
+        border-right: 0px;
+        padding: 0px;
+        margin: 0px 15px 0px 30px;
+        max-width: 350px;
+    }
+
+    .companeros2021_demo-navbar .dropdown button {
+        font-size: 17px;
+     }
+
+    .bck-box.estrategia>.bck-title:before,
+    .bck-box.diver> .bck-title:before,
+     .bck-box.saberes>.bck-title:before,
+     .bck-box.desequilibrio>.bck-title:before,
+    .bck-box.tic>.bck-title:before,
+    .bck-box.inter>.bck-title:before,
+    .bck-box.estrategia>.bck-title:before,
+     .bck-box.valores>.bck-title:before,
+     .bck-box.buenvivir>.bck-title:before,
+    .bck-box.glosario>.bck-title:before,
+     .bck-box.laboratorio>.bck-title:before,
+    .bck-box.indagacion>.bck-title:before,
+    .bck-box.sabias>.bck-title:before,
+    .bck-box.ejercicioresuelto>.bck-title:before,
+    .bck-box.seguridad>.bck-title:before,
+    .bck-box.frases>.bck-title:before {
+        padding: 27px;
+        left: 0px;
+    }
+
 }
 
-
-/*------------------------------Menú lateral - coursetag verde------------------------------*/
-
-.coursetag_sgel2021_compa_verde #book-index .col-main {
-    background: #78992b !important;
-}
-
-.coursetag_sgel2021_compa_verde .libro-left ul li a.book-index.active {
-    background-color: #78992b;
-}
-
-.coursetag_sgel2021_compa_verde #book-index #indice .units ul li:not(.disabled) a:hover, 
-.coursetag_sgel2021_compa_verde #book-index #indice .units ul li.active a {
-    color: #fff;
-    background: #78992b !important;
-}
-
-.coursetag_sgel2021_compa_verde #book-index #indice .unit-content .actividades .item:hover, 
-.coursetag_sgel2021_compa_verde #book-index #indice .unit-content .actividades .item.active, 
-.coursetag_sgel2021_compa_verde #book-index #indice .unit-content .actividades .item.current {
-    color: #fff;
-    background: #acbd85 !important;
-}
-
-/*------------------------------------------Coursetag amarillo---------------------------------*/
-
-/*-------------------TOC - coursetag amarillo--------------------------*/
-
-.coursetag_sgel2021_compa_amarillo #indice .units ul li.active:not(.disabled), 
-.coursetag_sgel2021_compa_amarillo #indice .units ul li:focus:not(.disabled) {
-    background: #d9aa00;
-}
-
-
-.coursetag_sgel2021_compa_amarillo #indice .units ul li.hover:not(.disabled), 
-.coursetag_sgel2021_compa_amarillo #indice .units ul li:hover:not(.disabled), 
-.coursetag_sgel2021_compa_amarillo #indice .units ul li:hover:not(.disabled) {
-    background: #e8d485 !important;
-}
-
-
-.coursetag_sgel2021_compa_amarillo #indice .actividades a:hover {
-    color: #d9aa00;
-}
-
-
-/*------------------------------Navbar - Coursetag amarillo-----------------------------*/
-
-.coursetag_sgel2021_compa_amarillo.body_clase .companeros2021_demo-navbar {
-    background-color: #d9aa00;
-}
-
-
-/*------------------------------Menú lateral - coursetag amarillo------------------------------*/
-
-.coursetag_sgel2021_compa_amarillo #book-index .col-main {
-    background: #d9aa00 !important;
-}
-
-.coursetag_sgel2021_compa_amarillo .libro-left ul li a.book-index.active {
-    background-color: #d9aa00;
-}
-
-.coursetag_sgel2021_compa_amarillo #book-index #indice .units ul li:not(.disabled) a:hover, 
-.coursetag_sgel2021_compa_amarillo #book-index #indice .units ul li.active a {
-    color: #fff;
-    background: #d9aa00 !important;
-}
-
-.coursetag_sgel2021_compa_amarillo #book-index #indice .unit-content .actividades .item:hover, 
-.coursetag_sgel2021_compa_amarillo #book-index #indice .unit-content .actividades .item.active, 
-.coursetag_sgel2021_compa_amarillo #book-index #indice .unit-content .actividades .item.current {
-    color: #fff;
-    background: #e8d384 !important;
-}
-
-/*------------------------------------------Coursetag rojo internacional---------------------------------*/
-
-/*-------------------TOC - coursetag rojo internacional--------------------------*/
-
-.coursetag_sgel2021_compainternacional_rojo #indice .units ul li.active:not(.disabled), 
-.coursetag_sgel2021_compainternacional_rojo #indice .units ul li:focus:not(.disabled) {
-    background: #db0b34;
-}
-
-
-.coursetag_sgel2021_compainternacional_rojo #indice .units ul li.hover:not(.disabled), 
-.coursetag_sgel2021_compainternacional_rojo #indice .units ul li:hover:not(.disabled), 
-.coursetag_sgel2021_compainternacional_rojo #indice .units ul li:hover:not(.disabled) {
-    background: #eca3b4 !important;
-}
-
-
-.coursetag_sgel2021_compainternacional_rojo #indice .actividades a:hover {
-    color: #db0b34;
-}
-
-
-/*------------------------------Navbar - Coursetag rojo internacional-----------------------------*/
-
-.coursetag_sgel2021_compainternacional_rojo.body_clase .companeros2021_demo-navbar {
-    background-color: #db0b34;
-}
-
-
-/*------------------------------Menú lateral - coursetag rojo internacional------------------------------*/
-
-.coursetag_sgel2021_compainternacional_rojo #book-index .col-main {
-    background: #db0b34 !important;
-}
-
-.coursetag_sgel2021_compainternacional_rojo .libro-left ul li a.book-index.active {
-    background-color: #db0b34;
-}
-
-.coursetag_sgel2021_compainternacional_rojo #book-index #indice .units ul li:not(.disabled) a:hover, 
-.coursetag_sgel2021_compainternacional_rojo #book-index #indice .units ul li.active a {
-    color: #fff;
-    background: #db0b34 !important;
-}
-
-.coursetag_sgel2021_compainternacional_rojo #book-index #indice .unit-content .actividades .item:hover, 
-.coursetag_sgel2021_compainternacional_rojo #book-index #indice .unit-content .actividades .item.active, 
-.coursetag_sgel2021_compainternacional_rojo #book-index #indice .unit-content .actividades .item.current {
-    color: #fff;
-    background: #ec99a9 !important;
-}
-
-/*------------------------------------------Coursetag azul internacional---------------------------------*/
-
-/*-------------------TOC - coursetag azul internacional--------------------------*/
-
-.coursetag_sgel2021_compainternacional_azul #indice .units ul li.active:not(.disabled), 
-.coursetag_sgel2021_compainternacional_azul #indice .units ul li:focus:not(.disabled) {
-    background: #00a4c2;
-}
-
-
-.coursetag_sgel2021_compainternacional_azul #indice .units ul li.hover:not(.disabled), 
-.coursetag_sgel2021_compainternacional_azul #indice .units ul li:hover:not(.disabled), 
-.coursetag_sgel2021_compainternacional_azul #indice .units ul li:hover:not(.disabled) {
-    background: #7dd0e1 !important;
-}
-
-
-.coursetag_sgel2021_compainternacional_azul #indice .actividades a:hover {
-    color: #00a4c2;
-}
-
-
-/*------------------------------Navbar - Coursetag azul internacional-----------------------------*/
-
-.coursetag_sgel2021_compainternacional_azul.body_clase .companeros2021_demo-navbar {
-    background-color: #00a4c2;
-}
-
-
-/*------------------------------Menú lateral - coursetag azul internacional------------------------------*/
-
-.coursetag_sgel2021_compainternacional_azul #book-index .col-main {
-    background: #00a4c2 !important;
-}
-
-.coursetag_sgel2021_compainternacional_azul .libro-left ul li a.book-index.active {
-    background-color: #00a4c2;
-}
-
-.coursetag_sgel2021_compainternacional_azul #book-index #indice .units ul li:not(.disabled) a:hover, 
-.coursetag_sgel2021_compainternacional_azul #book-index #indice .units ul li.active a {
-    color: #fff;
-    background: #00a4c2 !important;
-}
-
-.coursetag_sgel2021_compainternacional_azul #book-index #indice .unit-content .actividades .item:hover, 
-.coursetag_sgel2021_compainternacional_azul #book-index #indice .unit-content .actividades .item.active, 
-.coursetag_sgel2021_compainternacional_azul #book-index #indice .unit-content .actividades .item.current {
-    color: #fff;
-    background: #7cc3d0 !important;
-}
-
-/*------------------------------------------Coursetag amarillo internacional---------------------------------*/
-
-/*-------------------TOC - coursetag amarillo internacional--------------------------*/
-
-.coursetag_sgel2021_compainternacional_amarillo #indice .units ul li.active:not(.disabled), 
-.coursetag_sgel2021_compainternacional_amarillo #indice .units ul li:focus:not(.disabled) {
-    background: #ffcd00;
-}
-
-
-.coursetag_sgel2021_compainternacional_amarillo #indice .units ul li.hover:not(.disabled), 
-.coursetag_sgel2021_compainternacional_amarillo #indice .units ul li:hover:not(.disabled), 
-.coursetag_sgel2021_compainternacional_amarillo #indice .units ul li:hover:not(.disabled) {
-    background: #fdd942 !important;
-}
-
-
-.coursetag_sgel2021_compainternacional_amarillo #indice .actividades a:hover {
-    color: #ffcd00;
-}
-
-
-/*------------------------------Navbar - Coursetag amarillo internacional-----------------------------*/
-
-.coursetag_sgel2021_compainternacional_amarillo.body_clase .companeros2021_demo-navbar {
-    background-color: #ffcd00;
-}
-
-
-/*------------------------------Menú lateral - coursetag amarillo internacional------------------------------*/
-
-.coursetag_sgel2021_compainternacional_amarillo #book-index .col-main {
-    background: #ffcd00 !important;
-}
-
-.coursetag_sgel2021_compainternacional_amarillo .libro-left ul li a.book-index.active {
-    background-color: #ffcd00;
-}
-
-.coursetag_sgel2021_compainternacional_amarillo #book-index #indice .units ul li:not(.disabled) a:hover, 
-.coursetag_sgel2021_compainternacional_amarillo #book-index #indice .units ul li.active a {
-    color: #fff;
-    background: #ffcd00 !important;
-}
-
-.coursetag_sgel2021_compainternacional_amarillo #book-index #indice .unit-content .actividades .item:hover, 
-.coursetag_sgel2021_compainternacional_amarillo #book-index #indice .unit-content .actividades .item.active, 
-.coursetag_sgel2021_compainternacional_amarillo #book-index #indice .unit-content .actividades .item.current {
-    color: #fff;
-    background: #f3d96f !important;
-}
-
-
-/*------------------------------------------Coursetag verde internacional---------------------------------*/
-
-/*-------------------TOC - coursetag verde internacional--------------------------*/
-
-.coursetag_sgel2021_compainternacional_verde #indice .units ul li.active:not(.disabled), 
-.coursetag_sgel2021_compainternacional_verde #indice .units ul li:focus:not(.disabled) {
-    background: #009b67;
-}
-
-
-.coursetag_sgel2021_compainternacional_verde #indice .units ul li.hover:not(.disabled), 
-.coursetag_sgel2021_compainternacional_verde #indice .units ul li:hover:not(.disabled), 
-.coursetag_sgel2021_compainternacional_verde #indice .units ul li:hover:not(.disabled) {
-    background: #6fc7ac !important;
-}
-
-
-.coursetag_sgel2021_compainternacional_verde #indice .actividades a:hover {
-    color: #009b67;
-}
-
-
-/*------------------------------Navbar - Coursetag verde internacional-----------------------------*/
-
-.coursetag_sgel2021_compainternacional_verde.body_clase .companeros2021_demo-navbar {
-    background-color: #009b67;
-}
-
-
-/*------------------------------Menú lateral - coursetag verde internacional------------------------------*/
-
-.coursetag_sgel2021_compainternacional_verde #book-index .col-main {
-    background: #009b67 !important;
-}
-
-.coursetag_sgel2021_compainternacional_verde .libro-left ul li a.book-index.active {
-    background-color: #009b67;
-}
-
-.coursetag_sgel2021_compainternacional_verde #book-index #indice .units ul li:not(.disabled) a:hover, 
-.coursetag_sgel2021_compainternacional_verde #book-index #indice .units ul li.active a {
-    color: #fff;
-    background: #009b67 !important;
-}
-
-.coursetag_sgel2021_compainternacional_verde #book-index #indice .unit-content .actividades .item:hover, 
-.coursetag_sgel2021_compainternacional_verde #book-index #indice .unit-content .actividades .item.active, 
-.coursetag_sgel2021_compainternacional_verde #book-index #indice .unit-content .actividades .item.current {
-    color: #fff;
-    background: #7ab5a1 !important;
+@media screen and (max-width: 450px) {
+
+    .body_clase .companeros2021_demo-navbar .navbar-content {
+        display: none;
+    }
+
+    .content_type_clase_companeros2021_demo .companeros2021_demo-navbar .dropdown {
+        display: none;
+    }
+
+    .body_clase #actividad .carousel-inner .item-container {
+        margin-top: 0px;
+    }
+
+    .body_clase .content-wrapper {
+        padding-top: 85px;
+        padding-bottom: 0px;
+    }
+
+    .puzzle-wrapper {
+        width: 100%;
+    }
+
+    .slide.crosswords-puzzle .enunciados {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #actividad .workspace.clasificar .clasificar_lista .classify-item {
+        line-height: 13px !important;
+        position: relative !important;
+        height: auto  !important;
+        padding: 15px 5px 0px  !important;
+    }
+
+    a#boton_notes {
+        display: none;
+    }
+
+    a#boton_borrador {
+        display: none;
+    }
+
+    #actividad .carousel-inner .class_slide {
+        padding: 11px 20px 0px;
+    }
+
+    .body_clase:not(.edit) .logo-publisher {
+        display: none;
+    }
 }
