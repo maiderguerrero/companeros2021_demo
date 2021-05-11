@@ -2,12 +2,12 @@
 	'use strict';
 
 	var companeros2021_demoStyle = function () {
-		blink.theme.styles.basic.apply(this, arguments);
+		blink.theme.styles.vitamina.apply(this, arguments);
 	},
 	page = blink.currentPage;
 
 	companeros2021_demoStyle.prototype = {
-		parent: blink.theme.styles.basic.prototype,
+		parent: blink.theme.styles.vitamina.prototype,
 		bodyClassName: 'content_type_clase_companeros2021_demo',
 		ckEditorStyles: {
 			name: 'companeros2021_demo',
@@ -67,7 +67,7 @@
 		}
 	};
 
-	companeros2021_demoStyle.prototype = _.extend({}, new blink.theme.styles.basic(), companeros2021_demoStyle.prototype);
+	companeros2021_demoStyle.prototype = _.extend({}, new blink.theme.styles.vitamina(), companeros2021_demoStyle.prototype);
 	blink.theme.styles['companeros2021_demo'] = companeros2021_demoStyle;
 
 })( blink );
