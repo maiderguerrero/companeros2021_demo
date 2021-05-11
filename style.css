@@ -527,6 +527,11 @@ body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover,
     color: #fff;
     vertical-align: bottom;
     font-size: 2rem;
+    border-radius: 5px;
+    background-color: transparent;
+    text-indent: 0px;
+    line-height: 2.5rem;
+    cursor: pointer;
 }
 
 
@@ -544,16 +549,6 @@ body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover,
     background: linear-gradient(to left, #7aac39, transparent);
 }
 
-.body_clase .companeros2021_demo-navbar {
-    position: fixed;
-    top: 44px;
-    width: 100%;
-    left: 0;
-    z-index: 100;
-    background-color: #be1f24;
-    padding-top: 0px;
-    height: 41px;
-}
 
 .body_clase .modo-revision ~ .companeros2021_demo-navbar .navbar-content h2 #nombre-tema-wrapper {
     margin-left: -20px;
@@ -585,7 +580,6 @@ body.is_app .companeros2021_demo-navbar.ocultar {
     top: -136px;
 }
 
-.body_clase .companeros2021_demo-navbar .dropdown button,
 .body_clase .companeros2021_demo-navbar li {
     border-radius: 5px;
     border: none;
@@ -603,16 +597,7 @@ body.is_app .companeros2021_demo-navbar.ocultar {
     font-size: 1.5rem;
 }
 
-.body_clase .companeros2021_demo-navbar .dropdown button {
-    font-weight: 600;
-    width: auto;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    border: none;
-    color: #fff;
-    vertical-align: bottom;
-}
+
 
 .body_clase .companeros2021_demo-navbar .dropdown button:focus {
     outline: none;
@@ -658,18 +643,7 @@ body.is_app .companeros2021_demo-navbar.ocultar {
     margin-top: -9px;
 }
 
-.body_clase .companeros2021_demo-navbar .navbar-content h2 {
-    color: #fff;
-    font-weight: 600;
-    font-size: 2.2rem;
-    margin-bottom: 0;
-    padding-top: 0px;
-    padding-left: 60px;
-    position: relative;
-    text-align: left;
-    vertical-align: middle;
-    display: table-cell;
-}
+
 
 .body_clase .companeros2021_demo-navbar .navbar-content h2 #nombre-tema-wrapper {
     line-height: 2.5rem;
