@@ -1,16 +1,16 @@
 (function (blink) {
 	'use strict';
 
-	var vitaminaStyle = function () {
+	var companeros2021_demoStyle = function () {
 		blink.theme.styles.maya_educacion.apply(this, arguments);
 	},
 	page = blink.currentPage;
 
-	vitaminaStyle.prototype = {
+	companeros2021_demoStyle.prototype = {
 		parent: blink.theme.styles.maya_educacion.prototype,
-		bodyClassName: 'content_type_clase_vitamina',
+		bodyClassName: 'content_type_clase_companeros2021_demo',
 		ckEditorStyles: {
-			name: 'vitamina',
+			name: 'companeros2021_demo',
 			styles: [
 				{ name: 'Lista Ordenada 1', element: 'ol', attributes: { 'class': 'bck-ol-1' } },
 				{ name: 'Lista Ordenada 4', element: 'ol', attributes: { 'class': 'bck-ol-4' } },
@@ -35,7 +35,7 @@
 		},
 		slidesTitle: {},
 		subunits: [],
-		classNavBar: "vitamina-navbar",
+		classNavBar: "companeros2021_demo-navbar",
 
 		init: function () {
 			this.parent.init.call(this.parent, this);
@@ -54,7 +54,7 @@
 		}
 	};
 
-	vitaminaStyle.prototype = _.extend({}, new blink.theme.styles.maya_educacion(), vitaminaStyle.prototype);
-	blink.theme.styles['vitamina'] = vitaminaStyle;
+	companeros2021_demoStyle.prototype = _.extend({}, new blink.theme.styles.maya_educacion(), companeros2021_demoStyle.prototype);
+	blink.theme.styles['companeros2021_demo'] = companeros2021_demoStyle;
 
 })( blink );
