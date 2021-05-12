@@ -398,7 +398,7 @@ body:not(.isTablet) #book-index #indice .unit-content .actividades .item:active,
 #book-index #indice .unit-content .actividades .item.active,
 #book-index #indice .unit-content .actividades .item.current {
     color: #fff;
-    background: #f18c6a !important;
+    background: #f18c6a;
 }
 
 body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover a,
@@ -439,6 +439,12 @@ body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover a
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
 }
 
+#book-index #indice .unit-content .actividades .item {
+    background: #ddd;
+    margin: 0px -20px 2px -20px;
+    padding-left: 25px;
+    opacity: 1;
+}
 
 body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover, 
 #book-index #indice .units ul li.active a {
@@ -2678,7 +2684,7 @@ table td.bck-td-dos {
 .coursetag_sgel2021_compainternacional_amarillo #indice .units ul li.hover:not(.disabled), 
 .coursetag_sgel2021_compainternacional_amarillo #indice .units ul li:hover:not(.disabled), 
 .coursetag_sgel2021_compainternacional_amarillo #indice .units ul li:hover:not(.disabled) {
-    background: #fdd942 !important;
+    background: #f3df8c !important;
 }
 
 
